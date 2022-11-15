@@ -4,19 +4,16 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font: 1em system-ui;
   }
   
   main {
-    flex: 1;
     background-color: #eee;
     padding: 1em;
   }
   
-  footer {
+  /* footer {
     flex: none;
     display: flex;
     gap: 1em;
@@ -24,17 +21,19 @@ body {
     background: black;
     padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
     /* adds the safe-area-inset-bottom value to the initial 1em of padding.
-    a larger black area will display for a device that has a positive value for this variable. */
+    a larger black area will display for a device that has a positive value for this variable.
     position: sticky;
     bottom: 0;
-  }
+  } */
   
   button {
     padding: 1em;
-    background: white;
+    background: rgb(199, 36, 36);
     color: black;
-    margin: 0;
-    width: 100%;
+    margin: 0 15vw;
+    width: 6vw;
     border: none;
     font: 1em system-ui;
+    position: absolute;
+    top: env(safe-area-inset-top);
   }
