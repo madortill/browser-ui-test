@@ -35,5 +35,6 @@ body {
     border: none;
     font: 1em system-ui;
     position: absolute;
-    top: env(safe-area-inset-top);
+    /* top: env(safe-area-inset-top); */
+    top: 0;
   }
